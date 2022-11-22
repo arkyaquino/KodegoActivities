@@ -1,0 +1,46 @@
+* {box-sizing: border-box;}
+
+.head {
+    background-color: aqua;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.main {
+    display: flex;
+}
+
+nav {
+    background-color: darkslategrey;
+    padding: 5px;
+    width: 100%;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+.main div {
+    height: 300px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid aqua;
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        flex-wrap: wrap;
+    }
+    .main div {
+        display: block;
+    }
+}
+
+
