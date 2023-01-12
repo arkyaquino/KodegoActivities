@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            height: 80vh;
+            width: 100%;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+
+
+        }
+
+
+        .btn {
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(243, 190, 16);
+            color: rgb(240, 13, 13);
+            transition: 0.1 ease-in;
+        }
+
+        button {
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        #equals {
+            width: 100%;
+        }
+
+        table {
+            background-color: aquamarine;
+            border: 2px solid green;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 12px 14px 5px -1px rgba(0, 0, 0, 0.65);
+            -webkit-box-shadow: 12px 14px 5px -1px rgba(0, 0, 0, 0.65);
+            -moz-box-shadow: 12px 14px 5px -1px rgba(0, 0, 0, 0.65);
+        }
+        .output {
+            height: 40px;
+            width: 100%;
+            color: aliceblue;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr class="output"> 
+                <th colspan="4" align="right" name="previous">
+                    <div data-previous-operand class="previous-operand"></div>
+                </th>
+            </tr>
+
+            <tr class="output">
+                <th colspan="4" align="right" name="current">
+                    <div data-current-operand class="current-operand"></div>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="allClear" class="btn-clear" data-all-clear>AC</button>
+                </td>
+                <td>
+                    <button id="delete" class="btn" data-delete>Del</button>
+                </td>
+                <td>
+                    <button id="percent" class="btn">%</button>
+                </td>
+                <td>
+                    <!-- alt 0247 divie sign -->
+                    <button id="divide" class="btn" name="operationBtn" data-operation>÷</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="num7" class="btn" name="numbers" data-number>7</button>
+                </td>
+                <td>
+                    <button id="num8" class="btn" name="numbers" data-number>8</button>
+                </td>
+                <td>
+                    <button id="num9" class="btn" name="numbers" data-number>9</button>
+                </td>
+                <td>
+                    <button id="times" class="btn" name="operationBtn" data-operation>×</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="num4" class="btn" name="numbers" data-number>4</button>
+                </td>
+                <td>
+                    <button id="num5" class="btn" name="numbers" data-number>5</button>
+                </td>
+                <td>
+                    <button id="num6" class="btn" name="numbers" data-number>6</button>
+                </td>
+                <td>
+                    <button id="minus" class="btn" name="operationBtn" data-operation>-</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="num1" class="btn" name="numbers" data-number>1</button>
+                </td>
+                <td>
+                    <button id="num2" class="btn" name="numbers" data-number>2</button>
+                </td>
+                <td>
+                    <button id="num3" class="btn" name="numbers" data-number>3</button>
+                </td>
+                <td>
+                    <button id="add" class="btn" name="operationBtn" data-operation>+</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="num0" class="btn" name="numbers" data-number>0</button>
+                </td>
+                <td>
+                    <button id="decimal" class="btn" name="numbers" data-number> . </button>
+                </td>
+                <td colspan="2" align="center">
+                    <button id="equals" class="btn" data-equals>=</button>
+                </td>
+            </tr>
+
+
+
+
+
+
+        </table>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="./calculator.js"></script>
+
+</html>
